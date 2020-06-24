@@ -30,13 +30,33 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <!-- 所有自訂的 CSS -->
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
 <link href="css/module.css" rel="stylesheet" />
 
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<script src="js/slick.min.js"></script>
 <script src="js/ui.js"></script>
+
+
+<script>
+    $(document).on('ready', function() {
+        $(".main").slick({
+            dots: true,
+            infinite: true,
+            arrows: false,
+            adaptiveHeight: true
+        })
+
+    });
+
+</script>
+
 
 </head>
 
@@ -66,7 +86,19 @@
     <header>
         <div class="logo"><img src="img/logo.png" alt=""></div>
     </header>
-   
+
+   <div class="main_slider">
+        <section class="main slider">
+            <div class="new_photo">
+                <div class="text"><h6>專業的顧問式服務  <br>解決各種配管問題</h6></div>
+                
+                <img src="img/main_img_01.jpg"> 
+            </div>
+            <div class="new_photo"><img src="img/main_img_02.jpg"> </div>
+            <div class="new_photo"><img src="img/main_img_03.jpg"> </div>
+        </section>
+    </div>
+
 </div>
 
 
