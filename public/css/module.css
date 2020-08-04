@@ -715,7 +715,7 @@ a {
   .accordion .accordion_item:hover {
     width: 60%; }
   .accordion .accordion_item:hover .mask {
-    opacity: .5; }
+    opacity: .3; }
   .accordion .accordion_item:hover .info p {
     color: #FFF; }
   .accordion .accordion_item:hover .info .line {
@@ -724,7 +724,7 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: .3;
+    opacity: .1;
     z-index: 0;
     transition: all .3s; }
   .accordion .accordion_item .info {
@@ -1294,10 +1294,75 @@ header .anchor ul {
   align-items: center; }
 
 header .anchor ul li {
-  margin-left: 30px; }
+  margin-left: 0px;
+  height: 70px;
+  padding: 0 22px;
+  cursor: pointer;
+  color: #999;
+  font-size: 18px;
+  font-weight: 900;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+
+header .anchor ul li:hover {
+  background: #182e59;
+  color: #FFF; }
 
 header .anchor ul li a {
-  color: #000; }
+  display: block;
+  height: 70px;
+  color: #999;
+  font-size: 18px;
+  font-weight: 900;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: all .3s; }
+
+header .anchor ul li .drop_down {
+  position: absolute;
+  display: none;
+  width: 150px;
+  top: 70px;
+  right: -10px;
+  transition: all .3s;
+  z-index: 3000; }
+
+header .anchor ul li .drop_down a {
+  display: block;
+  width: 100%;
+  height: 60px;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #666;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+header .anchor ul li .drop_down a:hover {
+  background: rgba(23, 45, 88, 0.9); }
+
+header .anchor ul li:hover .drop_down {
+  display: block; }
 
 .clear {
   clear: both; }
