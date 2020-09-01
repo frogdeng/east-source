@@ -226,7 +226,8 @@ a {
     padding: 30px; }
   .main_image_wrapper .main_slider .new_photo .text h6 {
     color: #FFF;
-    font-size: 40px; }
+    font-size: 40px;
+    text-align: center; }
   .main_image_wrapper .main_slider .new_photo img {
     width: 100%; }
   .main_image_wrapper .detail_main_image {
@@ -399,7 +400,7 @@ a {
     display: block;
     clear: both; }
   .detail aside {
-    width: 30%;
+    width: 20%;
     padding: 0 20px; }
   .detail aside ul li a {
     display: block;
@@ -426,7 +427,7 @@ a {
     width: 40px;
     margin-right: 12px; }
   .detail .detail_content {
-    width: 60%;
+    width: 70%;
     padding: 0 0px;
     margin-bottom: 150px; }
   .detail .detail_content .mainphoto .bxslider_1 {
@@ -434,6 +435,8 @@ a {
   .detail .detail_content .smallbigimg {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: start;
@@ -443,6 +446,7 @@ a {
   .detail .detail_content .smallbigimg a {
     width: 100px;
     margin-right: 10px;
+    margin-bottom: 10px;
     display: block; }
   .detail .detail_content .smallbigimg a img {
     display: block; }
@@ -519,8 +523,8 @@ a {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
-    background: url("../img/bg-1.png") 100px 400px;
+    height: 700px;
+    background: url("../img/bg-1.png") 100px 500px;
     background-repeat: repeat-x;
     position: relative;
     z-index: 1000; }
@@ -593,7 +597,7 @@ a {
     width: 35%;
     height: 400px;
     color: #244B5A;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 900;
     display: -ms-flexbox;
     display: flex;
@@ -606,7 +610,7 @@ a {
   .intro .intro_right {
     width: 70%; }
   .intro .intro_right p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
     line-height: 1.8; } }
 

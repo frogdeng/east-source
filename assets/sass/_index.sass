@@ -79,6 +79,7 @@ $susy: (debug: (image: hide))
 					h6
 						color: #FFF
 						font-size: 40px
+						text-align: center
 				img
 					width: 100%
 
@@ -208,7 +209,7 @@ $susy: (debug: (image: hide))
 		align-items: flex-start
 		// background: #627
 		aside
-			width: 30%
+			width: 20%
 			padding: 0 20px
 			ul 
 				li 
@@ -233,7 +234,7 @@ $susy: (debug: (image: hide))
 							width: 40px
 							margin-right: 12px
 		.detail_content
-			width: 60%
+			width: 70%
 			padding: 0 0px
 			margin-bottom: 150px
 			// background: #196
@@ -242,12 +243,14 @@ $susy: (debug: (image: hide))
 					width: 100%
 			.smallbigimg
 				display: flex
+				flex-wrap: wrap
 				flex-direction: row
 				justify-content: flex-start
 				align-items: center
 				a
 					width: 100px
 					margin-right: 10px
+					margin-bottom: 10px
 					display: block
 					img 
 						display: block
@@ -342,8 +345,8 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
-		height: 600px
-		background: url('../img/bg-1.png') 100px 400px
+		height: 700px
+		background: url('../img/bg-1.png') 100px 500px
 		background-repeat: repeat-x
 		// background-size: 3500px
 		position: relative
@@ -396,7 +399,7 @@ $susy: (debug: (image: hide))
 			width: 35%
 			height: 400px
 			color: #244B5A
-			font-size: 26px
+			font-size: 32px
 			font-weight: 900
 			// border: 1px solid #818181
 			display: flex
@@ -408,7 +411,7 @@ $susy: (debug: (image: hide))
 			// border: 1px solid #818181
 			// margin-top: -80px
 			p
-				font-size: 16px
+				font-size: 18px
 				margin-bottom: 15px
 				line-height: 1.8
 
