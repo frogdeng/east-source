@@ -719,7 +719,7 @@ a {
   .accordion .accordion_item:hover {
     width: 60%; }
   .accordion .accordion_item:hover .mask {
-    opacity: .3; }
+    opacity: .1; }
   .accordion .accordion_item:hover .info p {
     color: #FFF; }
   .accordion .accordion_item:hover .info .line {
@@ -728,7 +728,7 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: .1;
+    opacity: .7;
     z-index: 0;
     transition: all .3s; }
   .accordion .accordion_item .info {
@@ -743,7 +743,7 @@ a {
     padding: 40px;
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 0px;
     transition: all .3s; }
   .accordion .accordion_item .info .line {
     width: 100%;
