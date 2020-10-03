@@ -34,11 +34,10 @@ $susy: (debug: (image: hide))
 				.text
 					position: absolute
 					background: rgba(0,0,0,.8)
-					padding: 20px
-
+					padding: 14px
 					h6
 						color: #FFF
-						font-size: 20px
+						font-size: 16px
 				img
 					width: 100%
 
@@ -754,54 +753,6 @@ $susy: (debug: (image: hide))
 
 
 
-.partner_wrapper
-	background: #F6FAFF
-	padding: 50px 20px
-.partner
-	+susy-breakpoint($breakpoint_pad, $pad)
-		+container
-		h2 
-			font-size: 26px
-			color: #244B5A
-			font-weight: 900
-			margin-bottom: 50px
-		.logo_row
-			display: flex
-			flex-wrap: wrap
-			flex-direction: column
-			justify-content: flex-start
-			align-items: center
-
-			img 
-				display: block
-				margin-right: 100px
-				margin-bottom: 60px
-
-
-
-
-	+susy-breakpoint($breakpoint_desktop, $desktop)
-		+container
-		
-		h2 
-			font-size: 26px
-			color: #244B5A
-			font-weight: 900
-			margin-bottom: 50px
-		.logo_row
-			display: flex
-			flex-wrap: wrap
-			flex-direction: row
-			justify-content: flex-start
-			align-items: center
-
-			img 
-				display: block
-				margin-right: 100px
-				margin-bottom: 60px
-
-
-
 .footer_wrapper
 	background: #464646
 	padding: 80px 0	
@@ -838,21 +789,15 @@ $susy: (debug: (image: hide))
 				height: 3px
 				background: #FFF
 				margin: 50px 0
-		.kk_group
-			width: 100%
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: flex-start
-			color: #FFF
-			// border-left: 1px solid #FFF
-			padding-left: 0px
-			h6 
-				margin-bottom: 30px
-			img 
-				display: block
-				margin-bottom: 40px
 
+		.map
+			width: 100%
+			height: 308px
+			border: 4px solid #FFF
+			// background: #188
+			iframe
+				width: 100%
+				height: 300px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -865,7 +810,7 @@ $susy: (debug: (image: hide))
 			img 	
 				width: 200px
 		.add
-			width: 35%
+			width: 30%
 			h6 
 				font-size: 20px
 				color: #FFF
@@ -882,33 +827,14 @@ $susy: (debug: (image: hide))
 				height: 3px
 				background: #FFF
 				margin: 50px 0
-		.kk_group
-			width: 35%
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: flex-start
-			color: #FFF
-			border-left: 1px solid #FFF
-			padding-left: 50px
-			h6 
-				margin-bottom: 20px
-			
-			.log-row
-				height: 50px
-				display: flex
-				flex-direction: row
-				justify-content: center
-				align-items: center
-				margin-bottom: 10px
-				a
-					width: 180px
-					display: block
-
-					img 
-						display: block
-
-
+		.map
+			width: 30%
+			height: 308px
+			border: 4px solid #FFF
+			// background: #188
+			iframe
+				width: 100%
+				height: 300px
 
 footer
 	background: #464646

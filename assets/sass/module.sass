@@ -36,89 +36,179 @@ p
 
 
 header
-	position: fixed
-	z-index: 1000	
-	width: 100%
-	height: 70px
-	padding: 0 50px
-	background: rgba(255,255,255,.9)
-	filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6))
-	z-index: 2000
-	display: flex
-	flex-direction: row
-	justify-content: space-between
-	align-items: center
-	top: 0
-	.logo
-		width: 150px
-		margin-left: 80px
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		// position: fixed
+		z-index: 1000	
+		width: 100%
+		height: 70px
+		padding: 0 0px
+		background: rgba(255,255,255,.9)
+		filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6))
+		z-index: 2000
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		top: 0
+		.logo
 
-		img 
-			display: block
+			width: 120px
+			margin-left: 20px
+			img 
+				display: block
 
-	.anchor
-		ul
-			display: flex
-			flex-direction: row
-			justify-content: flex-end
-			align-items: center
-			li 
-				margin-left: 0px
-				height: 70px
-				padding: 0 22px
-				cursor: pointer
-				color: #999
-				font-size: 18px
-				font-weight: 900
+		.anchor
+			width: 60%
+			ul
 				display: flex
 				flex-direction: row
-				justify-content: center
+				justify-content: flex-end
 				align-items: center
-				position: relative
-				&:hover
-					background: #182e59
-					color: #FFF	
-				a 
-					display: block
-					// width: 140px
+				li 
+					margin-left: 0px
 					height: 70px
+					padding: 0 10px
+					cursor: pointer
 					color: #999
-					// padding: 0 22px
+					font-size: 14px
+					font-weight: 900
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					position: relative
+					&:hover
+						background: #182e59
+						color: #FFF	
+					a 
+						display: block
+						// width: 140px
+						height: 70px
+						color: #999
+						// padding: 0 22px
+						font-size: 14px
+						font-weight: 900
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						transition: all .3s
+
+					.drop_down
+						position: absolute
+						display: none
+						width: 150px
+						// background: rgba(0,0,0,.8)
+						top: 70px
+						right: -10px
+						transition: all .3s
+						z-index: 3000
+						a 
+							display: block
+							width: 100%
+							height: 60px
+							color: #FFF
+							font-size: 16px
+							line-height: 1.4
+							background: rgba(0,0,0,.6)
+							border-bottom: 1px solid #666
+							display: flex
+							flex-direction: column
+							justify-content: center
+							align-items: center
+							&:hover
+								background: rgba(23,45,88,.9)
+					&:hover
+						.drop_down
+							display: block
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: fixed
+		z-index: 1000	
+		width: 100%
+		height: 70px
+		padding: 0 50px
+		background: rgba(255,255,255,.9)
+		filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6))
+		z-index: 2000
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		top: 0
+		.logo
+			width: 150px
+			margin-left: 80px
+
+			img 
+				display: block
+
+		.anchor
+			width: 70%
+			ul
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				align-items: center
+				li 
+					margin-left: 0px
+					height: 70px
+					padding: 0 22px
+					cursor: pointer
+					color: #999
 					font-size: 18px
 					font-weight: 900
 					display: flex
 					flex-direction: row
 					justify-content: center
 					align-items: center
-					transition: all .3s
-
-				.drop_down
-					position: absolute
-					display: none
-					width: 150px
-					// background: rgba(0,0,0,.8)
-					top: 70px
-					right: -10px
-					transition: all .3s
-					z-index: 3000
+					position: relative
+					&:hover
+						background: #182e59
+						color: #FFF	
 					a 
 						display: block
-						width: 100%
-						height: 60px
-						color: #FFF
-						font-size: 16px
-						line-height: 1.4
-						background: rgba(0,0,0,.6)
-						border-bottom: 1px solid #666
+						// width: 140px
+						height: 70px
+						color: #999
+						// padding: 0 22px
+						font-size: 18px
+						font-weight: 900
 						display: flex
-						flex-direction: column
+						flex-direction: row
 						justify-content: center
 						align-items: center
-						&:hover
-							background: rgba(23,45,88,.9)
-				&:hover
+						transition: all .3s
+
 					.drop_down
-						display: block
+						position: absolute
+						display: none
+						width: 150px
+						// background: rgba(0,0,0,.8)
+						top: 70px
+						right: -10px
+						transition: all .3s
+						z-index: 3000
+						a 
+							display: block
+							width: 100%
+							height: 60px
+							color: #FFF
+							font-size: 16px
+							line-height: 1.4
+							background: rgba(0,0,0,.6)
+							border-bottom: 1px solid #666
+							display: flex
+							flex-direction: column
+							justify-content: center
+							align-items: center
+							&:hover
+								background: rgba(23,45,88,.9)
+					&:hover
+						.drop_down
+							display: block
 
 
 
